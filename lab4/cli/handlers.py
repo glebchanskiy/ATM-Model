@@ -28,7 +28,7 @@ def phone_payment_operation(controller: Controller, value: str) -> None:
     except (ValueError, IndexError):
         raise ParsingEexception(str(value))
     
-    response = controller.payment_phone(money, phone)
+    response = controller.payment_phone(money=money, phone=phone)
     print(response['message'])
 
 

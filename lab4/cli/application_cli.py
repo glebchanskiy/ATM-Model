@@ -54,6 +54,9 @@ class ApplicationCLI:
                         print(f"Ошибка ввода: {str(err)}")
                     except ParsingEexception as err:
                         print(f"Ошибка ввода: {str(err)}")
+                    except PhoneFormatException as err:
+                        print(f"Ошибка ввода: {str(err)}")
+                        
 
     def _get_user_entered_agruments(self) -> List[Tuple[str, str]]:
         short_flags, long_flags = self._get_handlers_expected_flags()
