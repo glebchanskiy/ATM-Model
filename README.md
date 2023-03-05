@@ -12,6 +12,7 @@ Install python deps:
 
 ```sh
 cd lab4
+poetry shell
 poetry install
 ```
 
