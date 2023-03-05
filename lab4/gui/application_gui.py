@@ -11,7 +11,7 @@ from lab4.gui.components.transfers_info import TransfersInfo
 
 import os
 
-class Application(MDApp):
+class ApplicationGUI(MDApp):
     def __init__(self, controller: Controller, **kwargs):
         super().__init__(**kwargs)
         self.controller = controller

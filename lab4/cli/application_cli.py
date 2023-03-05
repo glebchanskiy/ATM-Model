@@ -4,12 +4,12 @@ from typing import List, Tuple, Callable
 import getopt
 import sys
 
-from lab4.cli.CommandHandler import CommandHandler
+from lab4.cli.command_handler import CommandHandler
 from lab4.cli.exceptions import ParsingEexception
 from lab4.core.controller import Controller
 from lab4.core.exceptions import *
 
-class Application:
+class ApplicationCLI:
 
     _controller: Controller = None
     _handlers: List[CommandHandler] = None

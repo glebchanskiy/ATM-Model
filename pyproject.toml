@@ -23,5 +23,5 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-cli = "lab4.main:cli"
-gui = "lab4.main:gui"
+cli = "lab4.start_cli:cli"
+gui = "lab4.start_gui:gui"
