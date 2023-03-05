@@ -43,8 +43,8 @@ poetry run gui
 poetry run cli -c 1111111111111111 -p 1111 -it
 # withdraw 20 usd/byn
 poetry run cli -c 1111111111111111 -p 1111 -w 20
-# phone payment
-poetry run cli -c 1111111111111111 -p 1111 -o +333
+# phone payment 33 usd/byn
+poetry run cli -c 1111111111111111 -p 1111 -o +333-33-333-33-33=33
 ```
 short flag | long flag| option
 --- | --- | ---
