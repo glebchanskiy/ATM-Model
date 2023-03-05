@@ -34,3 +34,4 @@ poetry run gui
 ## Dependencies
 
 - poetry
+- docker
