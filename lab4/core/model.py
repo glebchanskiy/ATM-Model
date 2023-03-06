@@ -1,13 +1,15 @@
+import os
+
 from lab4.core.db_engine import DbEngine
 from lab4.core.state import State
 from lab4.core.orm_models import CardAccount, Card, Transfer, OperationType
 from lab4.core.exceptions import NoCardException, NoPincodeException, WrongPincodeException, WrongCardException, InsufficientFoundsException
-
+from lab4.core.serializer.serializer import Serializer
 
 class Model:
     def __init__(self) -> None:
         self._db_engine = DbEngine()
-        self._state = State()
+        self._state = State(Serializer())
 
     def get_account_info(self):
         if not self._state.card_number:
