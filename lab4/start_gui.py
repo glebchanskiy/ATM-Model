@@ -1,6 +1,6 @@
-from lab4.core.controller import Controller
+from lab4.core import Controller
 
-from lab4.gui.application_gui import ApplicationGUI
+from lab4.gui import ApplicationGUI
 
 
 def gui():

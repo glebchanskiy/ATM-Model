@@ -1,7 +1,7 @@
-from lab4.core.controller import Controller
+from lab4.core import Controller
 
-from lab4.cli.application_cli import ApplicationCLI
-from lab4.cli.command_handler import CommandHandler
+from lab4.cli import ApplicationCLI
+from lab4.cli import CommandHandler
 
 from lab4.cli.handlers import account_info
 from lab4.cli.handlers import insert_card
