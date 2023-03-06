@@ -7,10 +7,10 @@ class Engine(ABC):
         self._path = path
 
     @abstractmethod
-    def load(self) -> dict:
+    def deserialize(self) -> dict:
         pass
     
     @abstractmethod
-    def dump(self, data: dict) -> None:
+    def serialize(self, data: dict) -> None:
         pass
         
