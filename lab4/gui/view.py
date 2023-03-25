@@ -1,6 +1,6 @@
-from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.screenmanager import MDScreenManager
 from kivymd.uix.screen import MDScreen
+from kivymd.uix.transition import MDSlideTransition
 
 from lab4.core.controller import Controller
 from lab4.gui.components.dialog import Dialog
@@ -11,6 +11,7 @@ from lab4.core.exceptions import *
 class View(MDScreenManager):
     def __init__(self, terminate_app, controller: Controller, **kw):
         super().__init__(**kw)
+        self.transition = MDSlideTransition()
         self.terminate_app = terminate_app
         self.controller = controller
         self.dialog = None

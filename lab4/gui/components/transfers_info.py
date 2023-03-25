@@ -1,8 +1,5 @@
-from kivymd.uix.button import MDFlatButton
-from kivymd.uix.textfield import MDTextField
 from kivymd.uix.toolbar import MDTopAppBar
 from kivymd.uix.screen import MDScreen
-from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.button import MDRaisedButton
 from kivymd.uix.datatables import MDDataTable
 
@@ -39,7 +36,7 @@ def TransfersInfo(view: View):
             size_hint=(0.2,0.08),
             pos_hint={'center_x': 0.12, 'top': 0.1},
             font_size=40,
-            on_press=view.to_operations
+            on_press=view.to_operations,
         ),
     
         name='transfers_info',

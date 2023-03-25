@@ -46,16 +46,16 @@ poetry run cli -c 1111111111111111 -p 1111 -w 20
 # phone payment 33 usd/byn
 poetry run cli -c 1111111111111111 -p 1111 -o +333-33-333-33-33=33
 ```
+
 short flag | long flag| option
 --- | --- | ---
--c: | --card | card number 
+-c: | --card | card number
 -p: | --pin | card pincode
 -i | --info | account info
 -t | --transfers | transfers info
 -w: | --withdraw | withdraw cash
 -o: | --phone | phone payment
 -g | --get_card | terminate, get card back
-
 
 ---
 

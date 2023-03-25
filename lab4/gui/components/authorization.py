@@ -23,7 +23,7 @@ def Authorization(view: View):
                 font_size='48',
                 helper_text="Input card number (16 numbers)",
                 max_text_length=16,
-                helper_text_mode="on_error"
+                helper_text_mode="on_error",
             ),
             MDTextField(
                 id="pin_code_input",
@@ -34,18 +34,18 @@ def Authorization(view: View):
                 font_size='48',
                 max_text_length=4,
                 helper_text="Input pincode (4 numbers)",
-                helper_text_mode="on_error"
+                helper_text_mode="on_error",
             ),
             MDFlatButton(
 
                 text="SUBMIT",
                 halign='center',
                 theme_text_color="Custom",
-                on_press=view.submit_authorization
+                on_press=view.submit_authorization,
             ),
             id='auth_form',
             orientation='vertical',
-            padding=(100, 500)
+            padding=(100, 500),
 
         ),
         name='authorization',

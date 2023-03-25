@@ -3,7 +3,6 @@ from kivymd.uix.textfield import MDTextField
 from kivymd.uix.toolbar import MDTopAppBar
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.label import MDLabel
 
 from lab4.gui.view import View
 
@@ -22,14 +21,14 @@ def PhonePayment(view: View):
                 hint_text="Phone number",
                 font_size='48',
                 helper_text="blablaba",
-                helper_text_mode="on_error"
+                helper_text_mode="on_error",
             ),
             MDTextField(
                 id="money_amount",
                 hint_text="Enter the amount",
                 font_size='48',
                 helper_text="blablaba",
-                helper_text_mode="on_error"
+                helper_text_mode="on_error",
             ),
             MDRaisedButton(
                 text="BACK",
@@ -38,7 +37,7 @@ def PhonePayment(view: View):
                 pos_hint={'center_x': 0.5},
                 halign='center',
                 theme_text_color="Custom",
-                on_press=view.to_operations
+                on_press=view.to_operations,
             ),
             MDRaisedButton(
                 text="SUBMIT",
@@ -47,7 +46,7 @@ def PhonePayment(view: View):
                 pos_hint={'center_x': 0.5},
                 halign='center',
                 theme_text_color="Custom",
-                on_press=view.submit_phone_payment
+                on_press=view.submit_phone_payment,
             ),
             id='phone_pay_form',
             orientation='vertical',

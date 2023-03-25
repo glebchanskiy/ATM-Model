@@ -23,7 +23,6 @@ def AccountInfo(view: View):
                 id="card_number_label",
                 text="Account number:",
                 theme_text_color="Primary",
-                
                 halign='left',
             ),
             MDLabel(
@@ -37,7 +36,7 @@ def AccountInfo(view: View):
                 id="currency_label",
                 font_size= "100",
                 halign='left',
-                text='Currency'
+                text='Currency',
             ),
             MDLabel(
                 id="currency",
@@ -49,7 +48,7 @@ def AccountInfo(view: View):
                 id="balance_label",
                 font_size= "100",
                 halign='left',
-                text='Balance'
+                text='Balance',
             ),
             MDLabel(
                 id="balance",
@@ -64,10 +63,6 @@ def AccountInfo(view: View):
 
             height=dp(500),
             size_hint_y=None,
-
-            # orientation='vertical',
-            # padding=100
-
         ),
         MDRaisedButton(
             text="BACK",

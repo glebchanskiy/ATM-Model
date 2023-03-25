@@ -3,10 +3,8 @@ from kivymd.uix.textfield import MDTextField
 from kivymd.uix.toolbar import MDTopAppBar
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.label import MDLabel
 
 from lab4.gui.view import View
-
 
 
 def Withdrawal(view: View):
@@ -25,7 +23,7 @@ def Withdrawal(view: View):
                 hint_text="Enter the amount",
                 font_size='48',
                 helper_text="Enter valid amount (number>0)",
-                helper_text_mode="on_error"
+                helper_text_mode="on_error",
             ),
             MDRaisedButton(
                 text="BACK",
@@ -34,7 +32,7 @@ def Withdrawal(view: View):
                 pos_hint={'center_x': 0.5},
                 halign='center',
                 theme_text_color="Custom",
-                on_press=view.to_operations
+                on_press=view.to_operations,
             ),
             MDRaisedButton(
                 text="SUBMIT",
@@ -43,7 +41,7 @@ def Withdrawal(view: View):
                 pos_hint={'center_x': 0.5},
                 halign='center',
                 theme_text_color="Custom",
-                on_press=view.submit_withdrawal
+                on_press=view.submit_withdrawal,
             ),
             id='withdrawal_form',
             orientation='vertical',
