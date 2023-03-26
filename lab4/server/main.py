@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import uvicorn
 
 import logging
 from logging.config import dictConfig
@@ -18,3 +19,6 @@ app = FastAPI(
 app.include_router(cards_router)
 app.include_router(accounts_router)
 app.include_router(transfers_router)
+
+def run():
+    uvicorn.run(app, host="0.0.0.0", port=8000)

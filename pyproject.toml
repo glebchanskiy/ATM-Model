@@ -30,3 +30,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 cli = "lab4.start_cli:cli"
 gui = "lab4.start_gui:gui"
+server = "lab4.server.main:run"
