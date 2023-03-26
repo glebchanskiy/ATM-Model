@@ -1,34 +1,50 @@
-# ATM Model- LR4
+# ATM-Model LR4
 
 ## Install
 
 Clone repository:
 
 ```sh
-git clone https://github.com/glebchanskiy/PPOIS-sem4-lab4
+git clone https://github.com/glebchanskiy/ATM-Model
+```
+
+Log in to poetry shell:
+
+```sh
+cd ATM-Model
+poetry shell
 ```
 
 Install python deps:
 
 ```sh
-cd lab4
-poetry shell
 poetry install
 ```
 
 ## Run
 
-Run db:
+Run postgres:
 
 ```sh
-cd lab4/postrgres-db
+cd lab4/postgres-db
 docker-compose up
+
+# create tables (only once)
+cd lab4/server
+alembic upgrade head
 ```
 
-Run game:
+Run server:
 
 ```sh
-cd lab4
+poetry run server
+```
+
+After that, at localhost:8000/docs all server endpoints will be available for viewing.
+
+Run client:
+
+```sh
 # run cli atm:
 poetry run cli
 
