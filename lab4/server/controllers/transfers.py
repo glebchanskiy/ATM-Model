@@ -19,7 +19,14 @@ def get_transfers() -> list[TransferDTO]:
 
 @router.get("/transfers/{id}")
 def get_transfer_by_id(id: int) -> TransferDTO:
-    return transfer_repository.get_by_id(id)
+    transfer = transfer_repository.get_by_id(id)
+    if transfer is not None:
+        return transfer
+    else:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Resource Not Found. Transfer '{id}' could not be found."
+        )
 
 @router.get("/transfers/by-account-id/{id}")
 def get_transfers_by_account_id(id: int) -> list[TransferDTO]:
