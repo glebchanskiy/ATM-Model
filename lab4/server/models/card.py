@@ -8,4 +8,4 @@ class Card(Base):
     id = Column(Integer, primary_key=True)
     number = Column(String, nullable=False)
     pincode = Column(String, nullable=False)
-    account_id = Column(Integer, ForeignKey('CardAccount.id'))
+    account_id = Column(Integer, ForeignKey('card_account.id'))
